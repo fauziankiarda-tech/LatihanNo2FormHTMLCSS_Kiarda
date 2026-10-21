@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login The Batman</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background Batman */
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+
+            background-image: url("https://images.unsplash.com/photo-1531259683007-016a7b628fc3");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Kotak Login */
+        .container {
+            width: 350px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 30px;
+
+            background: rgba(0, 0, 0, 0.75);
+            border: 1px solid #2979ff;
+            border-radius: 10px;
+            box-shadow: 0 0 25px rgba(41, 121, 255, 0.5);
+        }
+
+        /* Judul Login */
+        .container h1 {
+            color: #ffffff;
+            text-align: left;
+            margin-bottom: 8px;
+            padding-bottom: 10px;
+
+            border-bottom: 4px solid #2979ff;
+        }
+
+        /* Subtitle */
+        .subtitle {
+            color: #90caf9;
+            font-size: 12px;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+        }
+
+        /* Label */
+        .container label {
+            display: block;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        /* Input Username dan Password */
+        .container input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+
+            border: none;
+            border-bottom: 2px solid #2979ff;
+
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* Warna Placeholder */
+        .container input::placeholder {
+            color: #aaaaaa;
+        }
+
+        /* Efek Ketika Input Dipilih */
+        .container input:focus {
+            outline: none;
+            border-bottom-color: #00bfff;
+        }
+
+        /* Tombol Login */
+        .container button {
+            width: 100%;
+            padding: 12px;
+
+            background-color: #2979ff;
+            border: none;
+            border-radius: 5px;
+
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Efek Hover Tombol */
+        .container button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 15px #2979ff;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 25px;
+            }
+
+            body {
+                background-position: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>LOGIN</h1>
+
+        <p class="subtitle">THE BATMANN</p>
+
+        <form>
+
+            <label for="username">Username</label>
+            <input
+                type="text"
+                id="username"
+                placeholder="Masukkan username"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Masukkan password"
+                required
+            >
+
+            <button type="submit">LOG IN</button>
+
+        </form>
+
+    </div>
+
+</body>
+  </html>
+  
